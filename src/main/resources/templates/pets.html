@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Pets</title>
+</head>
+
+<body
+	style="background-color: #f4f4f4; font-family: Calibri Light; margin: 50px; border-spacing: 10px; border: #85959E 4px double">
+	<header>
+		<center>
+			<h1>Pets</h1>
+		</center>
+	</header>
+	<p th:each="pet : ${pets}">
+	<span th:text="|${pet.id} ${pet.name}  has a hunger of  ${pet.hunger}, a thirst of ${pet.thirst}, and a boredom of ${pet.boredom}"></span></p>
+	
+
+
+</body>
+</html>
